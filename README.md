@@ -40,7 +40,7 @@ In Subtitle #13 the problems begin. There's a hard `CR` character at the end of 
 The worst case is finally in subtitles #14 & #15. The sentence runs not only over multiple lines, but is also split up over multiple subtitles.
 
 ## The solution
-PleasantTranslate tries to solve these problems by importing a SRT file, parsing its contents (to split the language from the timecodes and other meta data), joining the sentences before translation and splitting the translated sentences back up after. Finally it adds the timecodes and meta data back in, before writing the completed translation back in a SRT file.
+PleasantTranslate tries to solve these problems by importing a SRT file, parsing its contents (to split the language from the time codes and other meta data), joining the sentences before translation and splitting the translated sentences back up after. Finally it adds the time codes and meta data back in, before writing the completed translation back in a SRT file.
 
 ### Step by step
 After launching PleasantTranslate (and/or creating a new document), you'll see a window:
@@ -53,7 +53,7 @@ The basic settings for the project can be made above the `Import` step in the si
 
 ![Settings](readmeAssets/p2.png)
 
-Currently it's possible to select the following laguages as `Source Language`: `English`, `German`, `French`, `Swedish`, `Dutch`. (It's relatively easy to extend this list as long as the translation service and Apple's NaturalLanguage SDK support the language. See the source code or contact me for more information).
+Currently it's possible to select the following languages as `Source Language`: `English`, `German`, `French`, `Swedish`, `Dutch`. (It's relatively easy to extend this list as long as the translation service and Apple's NaturalLanguage SDK support the language. See the source code or contact me for more information).
 
 Supported translation services are currently `DeepL` and `Google Translate`. You must have at least one API Key from the chosen translation service! I strongly recommend `DeepL` as translation service.
 
@@ -72,7 +72,7 @@ After importing an SRT file, it's contents are shown on the right side of the wi
 
 Most SRT files follow the convention to contain a 2-letter language code in their file names. E.g. `test.en.srt` (`en` for `English`). If PleasantTranslate recognizes a supported source language in the file name, it automatically adjusts the `Source Language` setting of the document (see above).
 
-When reading the SRT file, PleasantTranslate can automatically adjust `cr` `nl` line breaks and purge any `html` tags from the subtitles (which most likely would mess up the translation). Its possible to disable both options but its recommended to leave those switche on.
+When reading the SRT file, PleasantTranslate can automatically adjust `cr` `nl` line breaks and purge any `html` tags from the subtitles (which most likely would mess up the translation). Its possible to disable both options but its recommended to leave those switches on.
 
 #### Parse SRT
 Click on the `Parse SRT` step to open its settings. Click on `Process` to parse the imported SRT file:
@@ -87,7 +87,7 @@ In case something goes wrong during parsing, the found issues can be inspected b
 
 You might try to edit the original SRT file in such a case and then re-import the file.
 
-Some SRT files contain subtitles containing advertisements at the begin or end. You can purge these from the parsed subtitles by adjusting the `Drop X Subtitles from Beginnig/Ending` options in the settings.
+Some SRT files contain subtitles containing advertisements at the begin or end. You can purge these from the parsed subtitles by adjusting the `Drop X Subtitles from Begining/Ending` options in the settings.
 
 #### Purge CC
 This step can remove any CC additions from the subtitles. This might be hints for "who is speaking", like `[FRANK]` or `FRANK:` in front of a sentence, additional text to describe sounds, like `(Door opening)` or song lyrics like `♪ La la la ♪`. 
@@ -100,23 +100,23 @@ When you switch from `Result` to `Changes`, you can inspect every single change 
 
 ![Purge CC changes](readmeAssets/p8.png)
 
-You are even able to supress selected changes by switching the respective checkbox off.
+You are even able to suppress selected changes by switching the respective checkbox off.
 
 In case you want to keep all CC additions, disable this step with the check box.
 
 #### Prewash
-To improve the quality of the later joined sentences, it might be neccessary to adjust subtitles, especially when a sentence spans multiple subtitles. Often an ellipsis (`…` or `...`) is used at the end (and/or the beginning) of subtitles. 
+To improve the quality of the later joined sentences, it might be necessary to adjust subtitles, especially when a sentence spans multiple subtitles. Often an ellipsis (`…` or `...`) is used at the end (and/or the beginning) of subtitles. 
 
 ![Prewash](readmeAssets/p9.png)
 
-As with `Purgce CC` above, you can switch to `Changes` to inspect every single change made by this process and also supress selected changes:
+As with `Purge CC` above, you can switch to `Changes` to inspect every single change made by this process and also suppress selected changes:
 
 ![Prewash changes](readmeAssets/p10.png)
 
 It is possible (but not recommended) to skip the whole step by switching off the checkmark.
 
 #### Parse Sentences
-This step uses Apple's NaturalLanguage SDK and some additional logic to join the splitted text from the subtitles back together to whole sentences.
+This step uses Apple's NaturalLanguage SDK and some additional logic to join the split text from the subtitles back together to whole sentences.
 
 ![Parse Sentences](readmeAssets/p11.png)
 
@@ -127,12 +127,12 @@ You can currently choose from two services: `DeepL` and `Google Translate`.
 
 **IMPORTANT: You must have a valid API key for the translation service you use!** You can get the API Keys on the websites of the services (there are free tiers available on both of them).
 
-We recommend `DeepL`, since the quality of the translations is much better and their free tier API Key doesn't automatically switch to a paid tier.
+I recommend `DeepL`, since the quality of the translations is much better and their free tier API Key doesn't automatically switch to a paid tier.
 
 ![Translate](readmeAssets/p12.png)
 
 
-Click on `API Key` to enter one (or more) API Key(s) for the seleted translation service (the `name` field is just there to help you to keep track of the entered API Keys). The API keys are stored securely in the systems keychain and are shared between all PleasantTranslate documents on your computer.
+Click on `API Key` to enter one (or more) API Key(s) for the selected translation service (the `name` field is just there to help you to keep track of the entered API Keys). The API keys are stored securely in the systems keychain and are shared between all PleasantTranslate documents on your computer.
 
 PleasantTranslate automatically creates a glossary during translation and uses this glossary on subsequent translations of the same document. Even if a new (or edited) SRT file is imported or one of the previous steps is changed. That way, PleasantTranslate minimizes accessing the translation service as much as possible (i.e. translating the same sentence twice in the same document only will call the translation service once).
 
