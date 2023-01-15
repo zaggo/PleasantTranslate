@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2A95FD4297406DB00B2B4A5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E2A95FD3297406DB00B2B4A5 /* Credits.rtf */; };
 		E2ADE0472965FC8500851A01 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0462965FC8500851A01 /* ErrorView.swift */; };
 		E2ADE0492966006900851A01 /* NotProcessedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0482966006900851A01 /* NotProcessedView.swift */; };
 		E2ADE04B2966025200851A01 /* ParserIssuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE04A2966025200851A01 /* ParserIssuesView.swift */; };
@@ -132,6 +133,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2A95FD3297406DB00B2B4A5 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E2ADE0462965FC8500851A01 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E2ADE0482966006900851A01 /* NotProcessedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotProcessedView.swift; sourceTree = "<group>"; };
 		E2ADE04A2966025200851A01 /* ParserIssuesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserIssuesView.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 				E2DF815329624D6E00B9483E /* Assets.xcassets */,
 				E2DF815829624D6E00B9483E /* Info.plist */,
 				E2DF815929624D6E00B9483E /* PleasantTranslate.entitlements */,
+				E2A95FD3297406DB00B2B4A5 /* Credits.rtf */,
 				E2DF815529624D6E00B9483E /* Preview Content */,
 			);
 			path = PleasantTranslate;
@@ -622,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DF815729624D6E00B9483E /* Preview Assets.xcassets in Resources */,
+				E2A95FD4297406DB00B2B4A5 /* Credits.rtf in Resources */,
 				E2DF815429624D6E00B9483E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -897,6 +901,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PleasantTranslate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PleasantTranslate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -925,6 +931,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PleasantTranslate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PleasantTranslate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
