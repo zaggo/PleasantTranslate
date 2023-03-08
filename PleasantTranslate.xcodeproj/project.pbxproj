@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24DE5CC29B925F200966EE4 /* SplitTranslationProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DE5CB29B925F200966EE4 /* SplitTranslationProcessorTests.swift */; };
 		E2A95FD4297406DB00B2B4A5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E2A95FD3297406DB00B2B4A5 /* Credits.rtf */; };
 		E2ADE0472965FC8500851A01 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0462965FC8500851A01 /* ErrorView.swift */; };
 		E2ADE0492966006900851A01 /* NotProcessedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0482966006900851A01 /* NotProcessedView.swift */; };
@@ -133,6 +134,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E24DE5CB29B925F200966EE4 /* SplitTranslationProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTranslationProcessorTests.swift; sourceTree = "<group>"; };
 		E2A95FD3297406DB00B2B4A5 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E2ADE0462965FC8500851A01 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E2ADE0482966006900851A01 /* NotProcessedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotProcessedView.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				E2ADE06D296783E300851A01 /* SourceLanguageHandlerTests.swift */,
 				E2ADE088296852D000851A01 /* ParseSentencesProcessorTests.swift */,
 				E2ADE0A929699D1200851A01 /* StringUtilitiesTests.swift */,
+				E24DE5CB29B925F200966EE4 /* SplitTranslationProcessorTests.swift */,
 			);
 			path = PleasantTranslateTests;
 			sourceTree = "<group>";
@@ -585,7 +588,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					E2DF814929624D6D00B9483E = {
 						CreatedOnToolsVersion = 14.1;
@@ -751,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24DE5CC29B925F200966EE4 /* SplitTranslationProcessorTests.swift in Sources */,
 				E2ADE08529684FCF00851A01 /* SentenceTests.swift in Sources */,
 				E2ADE0AA29699D1200851A01 /* StringUtilitiesTests.swift in Sources */,
 				E2DF81A32964795500B9483E /* SubtitleTests.swift in Sources */,
@@ -894,7 +898,8 @@
 				CODE_SIGN_ENTITLEMENTS = PleasantTranslate/PleasantTranslate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PleasantTranslate/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Y56WGKJZR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -908,7 +913,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pleasantsoftware.PleasantTranslate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -924,7 +929,8 @@
 				CODE_SIGN_ENTITLEMENTS = PleasantTranslate/PleasantTranslate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PleasantTranslate/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Y56WGKJZR;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -938,7 +944,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pleasantsoftware.PleasantTranslate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -953,6 +959,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6Y56WGKJZR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -972,6 +979,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6Y56WGKJZR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;

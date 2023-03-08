@@ -57,7 +57,7 @@ Currently it's possible to select the following languages as `Source Language`: 
 
 Supported translation services are currently `DeepL` and `Google Translate`. You must have at least one API Key from the chosen translation service! I strongly recommend `DeepL` as translation service.
 
-As target language, you can currently choose between `English`, `German` and `Japanese`. As with the `Source Language`s, it's relatively easy to add more target languages (if you are an developer), as long as the language is supported by the translation service and Apple's NaturalLanguage SDK.
+As target language, you can currently choose between `English`, `German` and `Japanese`. As with the `Source Language`s, it's relatively easy to add more target languages (if you are a developer), as long as the language is supported by the translation service and Apple's NaturalLanguage SDK.
 
 #### Import
 Click on the `Import` step to open it's details:

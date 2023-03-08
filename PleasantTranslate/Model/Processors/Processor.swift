@@ -106,6 +106,12 @@ class Processor: ObservableObject, Codable, Identifiable {
         self.cachedResult = nil
     }
     
+    #if DEBUG
+    func processAndCacheResultsForUnitTest(input: Any?) async {
+        _ =  await publish(processingResult: process(input: input))
+    }
+    #endif
+    
     // MARK: - Service
     private func addBindings(for inputProvider: Processor?) {
         inputProviderBindings.removeAll()
@@ -167,7 +173,7 @@ class Processor: ObservableObject, Codable, Identifiable {
         
         return result
     }
-
+    
     @MainActor
     private func publish(processingResult: Result<Any, Error>) -> VersionedProcessingResult {
         let versionedProcessResult = VersionedProcessingResult(processingResult: processingResult,

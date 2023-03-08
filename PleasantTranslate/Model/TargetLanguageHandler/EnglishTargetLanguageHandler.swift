@@ -26,6 +26,7 @@ import Foundation
 import NaturalLanguage
 
 struct EnglishTargetLanguageHandler: TargetLanguageHandler {
+    
     static var displayName: String { NSLocalizedString("English", comment: "") }
     static var twoLetterCode: LanguageTwoLetterCode { "en" }
     static var naturalLanguage: NLLanguage { .english }
@@ -37,7 +38,11 @@ struct EnglishTargetLanguageHandler: TargetLanguageHandler {
     
     // MARK: - API
     let maxLineLength = 50
-        
+
+    func append(senctenceWithText: String, to text: String) -> String {
+        text+" "+senctenceWithText
+    }
+
     // MARK: - iVars
     let tokenizer = NLTokenizer(unit: .word)
     

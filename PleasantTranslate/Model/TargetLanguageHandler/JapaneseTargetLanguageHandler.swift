@@ -37,7 +37,10 @@ struct JapaneseTargetLanguageHandler: TargetLanguageHandler {
     
     // MARK: - API
     let maxLineLength = 40
-            
+    func append(senctenceWithText: String, to text: String) -> String {
+        text+senctenceWithText
+    }
+
     // MARK: - iVars
     let tokenizer = NLTokenizer(unit: .word)
 

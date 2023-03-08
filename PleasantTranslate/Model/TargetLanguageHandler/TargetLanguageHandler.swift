@@ -41,6 +41,8 @@ protocol TargetLanguageHandler: Identifiable {
 
     init()
     func optimizeSplits(for text: String, splits: [LineSplitInfo]) -> [LineSplitInfo]
+    
+    func append(senctenceWithText: String, to text: String) -> String
 }
 
 extension TargetLanguageHandler {
@@ -86,7 +88,6 @@ extension TargetLanguageHandler {
         }
         return optimizedSplits
     }
-    
 }
 
 // MARK: - Optimize Algorithms

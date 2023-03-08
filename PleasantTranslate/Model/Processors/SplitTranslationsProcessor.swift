@@ -147,12 +147,13 @@ class SplitTranslationsProcessor: Processor {
                     await addIssue(.init(sentence: sentence, reason: .lessLines))
                 } else {
                     let translatedLine = splittedLines.removeFirst()
-                    if (line + translatedLine).count > targetLanguageHandler.maxLineLength && translatedSubtitle.lines.count < 3 {
+                    let appended = targetLanguageHandler.append(senctenceWithText: translatedLine, to: line)
+                    if appended.count > targetLanguageHandler.maxLineLength && translatedSubtitle.lines.count < 3 {
                         isLineExisting = false
                         line = translatedLine
                         isVirtualSplit = true
                     } else {
-                        line += translatedLine
+                        line = appended
                     }
                     
                     var lines = translatedSubtitle.lines
