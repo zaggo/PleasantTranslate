@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E24DE5CC29B925F200966EE4 /* SplitTranslationProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DE5CB29B925F200966EE4 /* SplitTranslationProcessorTests.swift */; };
+		E25216BD2B41FE6900C294B0 /* TimeshiftProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25216BC2B41FE6900C294B0 /* TimeshiftProcessor.swift */; };
+		E25216BF2B41FEF500C294B0 /* TimeshiftSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25216BE2B41FEF500C294B0 /* TimeshiftSettingsView.swift */; };
 		E2A95FD4297406DB00B2B4A5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E2A95FD3297406DB00B2B4A5 /* Credits.rtf */; };
 		E2ADE0472965FC8500851A01 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0462965FC8500851A01 /* ErrorView.swift */; };
 		E2ADE0492966006900851A01 /* NotProcessedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0482966006900851A01 /* NotProcessedView.swift */; };
@@ -135,6 +137,8 @@
 
 /* Begin PBXFileReference section */
 		E24DE5CB29B925F200966EE4 /* SplitTranslationProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTranslationProcessorTests.swift; sourceTree = "<group>"; };
+		E25216BC2B41FE6900C294B0 /* TimeshiftProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeshiftProcessor.swift; sourceTree = "<group>"; };
+		E25216BE2B41FEF500C294B0 /* TimeshiftSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeshiftSettingsView.swift; sourceTree = "<group>"; };
 		E2A95FD3297406DB00B2B4A5 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E2ADE0462965FC8500851A01 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E2ADE0482966006900851A01 /* NotProcessedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotProcessedView.swift; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 				E2ADE09D2968969400851A01 /* SplitTranslationsProcessor.swift */,
 				E2ADE0C0296B1D6400851A01 /* MergeProcessor.swift */,
 				E2ADE0AF296A0E5100851A01 /* ExportProcessor.swift */,
+				E25216BC2B41FE6900C294B0 /* TimeshiftProcessor.swift */,
 				E2ADE0B9296AE1E600851A01 /* Protocols */,
 			);
 			path = Processors;
@@ -533,6 +538,7 @@
 				E2ADE09F2968B13A00851A01 /* SplitTranslationsSettingsView.swift */,
 				E2ADE0A42968B3B100851A01 /* SplitTranslationsIssuesView.swift */,
 				E2ADE0C2296B21F900851A01 /* MergeSettingsView.swift */,
+				E25216BE2B41FEF500C294B0 /* TimeshiftSettingsView.swift */,
 				E2ADE0B1296A11FE00851A01 /* ExportSettingsView.swift */,
 			);
 			path = "Processor Views";
@@ -728,8 +734,10 @@
 				E2ADE081296846F900851A01 /* SubtitleTimecode+SampleData.swift in Sources */,
 				E2DF81E82965A31500B9483E /* ProcessorError.swift in Sources */,
 				E2ADE05B2966ED8A00851A01 /* ChangedSubtitle+SampleData.swift in Sources */,
+				E25216BF2B41FEF500C294B0 /* TimeshiftSettingsView.swift in Sources */,
 				E2DF81F82965BF8800B9483E /* SourceLanguageMenu.swift in Sources */,
 				E2DF81B02964897E00B9483E /* URLRequest+Utilities.swift in Sources */,
+				E25216BD2B41FE6900C294B0 /* TimeshiftProcessor.swift in Sources */,
 				E2DF81E22965970E00B9483E /* Processor.swift in Sources */,
 				E2ADE0592966ED6E00851A01 /* ChangedSubtitle.swift in Sources */,
 				E2DF81EC2965AE0B00B9483E /* ProcessingStepView.swift in Sources */,

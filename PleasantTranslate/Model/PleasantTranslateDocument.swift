@@ -178,6 +178,7 @@ class PleasantTranslateDocument: FileDocument, ObservableObject {
         TranslationProcessor.self,
         SplitTranslationsProcessor.self,
         MergeProcessor.self,
+        TimeshiftProcessor.self,
         ExportProcessor.self
     ]
 
