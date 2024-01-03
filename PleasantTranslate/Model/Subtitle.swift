@@ -73,7 +73,7 @@ extension Subtitle {
                 continue
             }
             line[aLower..<aUpper].foregroundColor = NSColor.systemIndigo
-            line[aLower..<aUpper].font = boldFont
+            line[aLower..<aUpper].font = .init(boldFont)
             attributedLines[source.lineIndex] = line
         }
         return attributedLines
