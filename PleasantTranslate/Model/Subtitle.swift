@@ -39,6 +39,10 @@ struct Subtitle: Identifiable, Codable, Equatable {
         .init(id: id, timecode: timecode, lines: newLines)
     }
     
+    func copyByReplacing(timecode: SubtitleTimecode) -> Subtitle {
+        .init(id: id, timecode: timecode, lines: lines)
+    }
+
     // MARK: - iVars
     var id: SubtitleId
     let timecode: SubtitleTimecode
